@@ -19,13 +19,28 @@ function App() {
   useEffect(()=>{
     getRequest()
   },[])
+  
 
   return (
-    <div className="movie-container">
+   <>
+   <header>
+     <form >
+        <input 
+        className="search" 
+        type="search"
+         placeholder="Search..." 
+         
+         />
+     </form>
+      </header>
+       <div className="movie-container">
+      
       {movies.map((movie)=>(
         <Movie key={movie.id} {...movie}/>
       ))}
     </div>
+   </>
+  
   );
 }
 
