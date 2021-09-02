@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Movie from "./Movie"
+import "./style.css"
 
 function App() {
   const API_KEY = "5227242edce84edeb076e008d734cbc1"
@@ -20,7 +21,7 @@ function App() {
   },[])
 
   return (
-    <div className="App">
+    <div className="movie-container">
       {movies.map((movie)=>(
         <Movie key={movie.id} {...movie}/>
       ))}

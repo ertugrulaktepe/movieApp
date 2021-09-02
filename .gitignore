@@ -10,7 +10,7 @@
 
 # production
 /build
-
+/style.scss
 # misc
 .DS_Store
 .env.local
